@@ -68,6 +68,18 @@ https://imdbmoviesapp.vercel.app/
 
 ---
 
+## Tech Stack  
+
+| Category | Technologies |
+|----------|-------------|
+| Frontend | React, Vite, TailwindCSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB Atlas |
+| Deployment | Vercel (Frontend), Render (Backend) |
+| Other | Axios, Mongoose |
+
+---
+
 ## Prerequisites
 
 * Node.js (16+ recommended)
@@ -154,6 +166,29 @@ npm install
 npm run dev
 ```
 ---
+# API Endpointes
+ ## Movie endpoints
+| Method | Route                            | Description                      |
+| -----: | -------------                    | ------------------               |
+|    GET | `/movies`                        | Fetch all movies                 |
+|    GET | `/movies/:id`                    | Get a movie by ID                |
+|    GET | `/movies/sorted?sortby=&orderby=`| Sort movies based on parameters  |
+|    GET | `/movies/search?q=`              | Search movies based on parameters|
+|    GET | `/movies/adminmovies/:id`        | Get movies added by admin        |
+|   POST | `/movies`                        | Add a new movie                  |
+|    PUT | `/movies/:id`                    | Update movie by ID               |
+| DELETE | `/movies/:id`                    | Delete movie by ID               |
+
+  ## User endpoints
+| Method | Route                            | Description                      |
+| -----: | -------------                    | ------------------               |
+|   POST | `/user/register`                 | Register a User                  |
+|   POST | `/user/login`                    | User login                       |
+|   GET  | `/user/logout`                   | User logout                      |
+|   GET  | `/user/is-auth`                  | Authorize User                   |
+
+
+
 
 ## Testing the flow
 
@@ -168,4 +203,8 @@ npm run dev
 
 ---
 
+## Author
+
+Mohammad Azhar
+GitHub: https://github.com/mohammadazhar01
 
